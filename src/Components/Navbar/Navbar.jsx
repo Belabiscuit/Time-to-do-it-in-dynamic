@@ -35,7 +35,7 @@ const Navbar = () => {
     const[open,setOpen] = useState(false)
     return (
     
-        <nav className='flex justify-between mx-10 my-3'>
+        <nav className='flex justify-between p-3 bg-cyan-950'>
            <span className='flex ' onClick={()=>setOpen(!open)}>
             {
                 open ? 
@@ -44,15 +44,19 @@ const Navbar = () => {
              </MenuIcon>
             }
            
-             <ul className='md:hidden '>
+             <ul className={`md:hidden
+              absolute mx-6 ${open ? 'top-12':'-top-60'} duration-1000 rounded-xl
+
+              `}>
                 {
 
                     Links
                 }
              </ul>
-            <h3>SIFAT</h3>
+            <h3 className='mx-8 '>SIFAT</h3>
            </span>
-        <ul className='hidden md:flex justify-center'>
+
+        <ul className='hidden md:flex justify-center rounded-xl'>
             
        {
          Links
