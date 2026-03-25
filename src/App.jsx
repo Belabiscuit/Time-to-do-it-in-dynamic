@@ -1,13 +1,24 @@
 
 import './App.css'
 
-import React from 'react';
+import React, { Suspense } from 'react';
 import Navbar from './Components/Navbar/Navbar';
-
+import PricingOptions from './Components/PricingOptions';
+const pricingPromise=fetch('PricingData.json').then(res=>res.json())
 const App = () => {
   return (
-  <Navbar></Navbar>
+    <>
+ <header>
+   <Navbar></Navbar>
+ </header>
+<main>
+  <Suspense fallback={<span className="loading loading-ball loading-md"></span>}>
+   <PricingOptions pricingPromise={pricingPromise}></PricingOptions>
+  </Suspense>
+</main>
+ </>
   );
+  
 };
 
 export default App;

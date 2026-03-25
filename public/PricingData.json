@@ -1,0 +1,55 @@
+[
+  {
+    "id": "basic-plan",
+    "name": "Basic Plan",
+    "price": 800,
+    "billing": "monthly",
+    "features": [
+      "Access to gym equipment",
+      "Locker room access",
+      "Free Wi-Fi",
+      "Open gym hours (6am - 10pm)"
+    ],
+    "popular": false
+  },
+  {
+    "id": "standard-plan",
+    "name": "Standard Plan",
+    "price":1200,
+    "billing": "monthly",
+    "features": [
+      "All Basic features",
+      "Access to group classes",
+      "1 personal training session/month",
+      "Fitness assessment"
+    ],
+    "popular": true
+  },
+  {
+    "id": "premium-plan",
+    "name": "Premium Plan",
+    "price": 2000,
+    "billing": "monthly",
+    "features": [
+      "All Standard features",
+      "Unlimited personal training",
+      "Diet & nutrition plan",
+      "24/7 gym access",
+      "Sauna & spa access"
+    ],
+    "popular": false
+  },
+  {
+    "id": "yearly-plan",
+    "name": "Yearly Membership",
+    "price": 22000,
+    "billing": "yearly",
+    "features": [
+      "All Premium features",
+      "2 months free",
+      "Priority support",
+      "Exclusive member events"
+    ],
+    "popular": false
+  }
+]
