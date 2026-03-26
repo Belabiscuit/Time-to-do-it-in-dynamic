@@ -11,7 +11,7 @@ const App = () => {
  <header>
    <Navbar></Navbar>
  </header>
-<main>
+<main className='bg-white'>
   <Suspense fallback={<span className="loading loading-ball loading-md"></span>}>
    <PricingOptions pricingPromise={pricingPromise}></PricingOptions>
   </Suspense>
